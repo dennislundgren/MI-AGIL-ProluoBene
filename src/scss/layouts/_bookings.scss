@@ -3,21 +3,28 @@
 .bookings {
   background-color: #e5e5e5;
   text-align: center;
-  .cleaner {
-    margin-top: -5%;
-  }
   .bi {
     font-size: 32px;
   }
-  .time {
-    line-height: 0%;
-    margin-bottom: 10%;
+  .infoCont {
+    display: flex;
+    flex-direction: column;
+    .cleaner {
+      margin-top: -5%;
+    }
+    .time {
+      line-height: 0%;
+      margin-bottom: 10%;
+    }
+    .location {
+      line-height: 0%;
+      margin-bottom: 10%;
+    }
   }
-  .location {
-    line-height: 0%;
-    margin-bottom: 10%;
-  }
+
   .btnContainer {
+    display: flex;
+    flex-direction: column;
     .btn {
       background-color: white;
       border: 1px solid black;
