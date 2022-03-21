@@ -5,7 +5,8 @@
   "main": "index.js",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel --no-cache"
+    "start": "parcel --no-cache",
+    "build": "parcel src/pages/bookings.html --no-cache"
   },
   "keywords": [],
   "author": "Malcolm Lindberg, Dennis Lundgren, Rasmus Palm",

@@ -1,0 +1,30 @@
+@use "../base/variables";
+
+.bookings {
+  background-color: #e5e5e5;
+  text-align: center;
+  .cleaner {
+    margin-top: -5%;
+  }
+  .bi {
+    font-size: 32px;
+  }
+  .time {
+    line-height: 0%;
+    margin-bottom: 10%;
+  }
+  .location {
+    line-height: 0%;
+    margin-bottom: 10%;
+  }
+  .btnContainer {
+    .btn {
+      background-color: white;
+      border: 1px solid black;
+      width: 220px;
+      height: 50px;
+      border-radius: 10px;
+      margin: 2%;
+    }
+  }
+}
