@@ -9,5 +9,21 @@
     <link rel="stylesheet" href="scss/main.scss" />
     <script type="module" src="js/main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section class="container">
+        <span class="logo"></span>
+      </section>
+      <form action="./pages/page.html" class="form">
+        <section class="container">
+          <label for="email" class="form__label" id="email">E-post</label>
+          <input type="text" class="form__input" />
+          <label for="password" class="form__label">Lösenord</label>
+          <input type="password" class="form__input" id="password" />
+          <input type="submit" class="form__submit" value="Logga in" />
+          <a href="./pages/register.html">Ej medlem? Registrera</a>
+        </section>
+      </form>
+    </main>
+  </body>
 </html>
