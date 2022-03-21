@@ -1,9 +1,24 @@
 @use "../base/variables";
 
+@mixin desktop() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
 .edit-bookings {
   display: flex;
   flex-direction: column;
   text-align: center;
+
+  .navigation-btn {
+    @include desktop() {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
   .btn {
     background-color: white;
     border: 1px solid black;
