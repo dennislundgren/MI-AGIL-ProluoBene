@@ -9,4 +9,4 @@ $ `parcel`
 :rooster: [Dennis Lundgren](https://github.com/dennislundgren) <br/>
 :dolphin: [Rasmus Palm](https://github.com/Rasweb)
 ## License
-:page_facing_up: [MIT](https://mit-license.org)
+:page_facing_up: [MIT](https://github.com/dennislundgren/MI-AGIL-ProluoBene/blob/development/LICENSE)
