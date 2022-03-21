@@ -4,5 +4,8 @@ Created as a School assignment at Medieinstitutet Stockholm, with focus on agile
 :elephant: [Malcolm Lindberg](https://github.com/malcolmlindberg) <br/>
 :rooster: [Dennis Lundgren](https://github.com/dennislundgren) <br/>
 :dolphin: [Rasmus Palm](https://github.com/Rasweb)
+## Setup
+`npm install`
+`parcel`
 ## License
 :page_facing_up: [MIT](https://mit-license.org)
