@@ -1,0 +1,30 @@
+@use "../base/mixins";
+@use "../base/variables";
+.login-page,
+.register-page {
+  background-color: variables.$color-blue;
+  background-image: linear-gradient(
+    -160deg,
+    variables.$color-blue 10%,
+    variables.$color-light-blue 130%
+  );
+  @include mixins.flex(column, center, baseline, 5rem);
+  padding: max(15vh, 12vw) 0;
+  height: 100vh;
+  overflow: auto;
+  .logo {
+    content: url(../assets/logo_big.svg);
+    height: 83px;
+    width: auto;
+  }
+  a {
+    padding-top: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: variables.$color-dark;
+    font-size: 14px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
