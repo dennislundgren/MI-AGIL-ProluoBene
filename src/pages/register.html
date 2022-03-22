@@ -10,39 +10,35 @@
     <script type="module" src="../js/main.js"></script>
   </head>
   <body>
-    <main>
+    <main class="register-page">
       <section class="container">
         <span class="logo"></span>
       </section>
       <form action="../index.html" class="form">
-        <section class="container">
-          <label for="email" class="form__label">E-post</label>
-          <input type="text" class="form__input" id="email" />
-          <label for="firstname" class="form__label">Förnamn</label>
-          <input type="firstname" class="form__input" id="firstname" />
-          <label for="lastname" class="form__label">Efternamn</label>
-          <input type="lastname" class="form__input" id="lastname" />
-          <label for="adress" class="form__label">Address</label>
-          <input type="adress" class="form__input" id="adress" />
+        <section class="form__container">
+          <label for="email" class="label">E-post</label>
+          <input type="text" class="input" id="email" />
+          <label for="firstname" class="label">Förnamn</label>
+          <input type="firstname" class="input" id="firstname" />
+          <label for="lastname" class="label">Efternamn</label>
+          <input type="lastname" class="input" id="lastname" />
+          <label for="adress" class="label">Address</label>
+          <input type="adress" class="input" id="adress" />
         </section>
-        <section class="container">
-          <label for="zip" class="form__label">Postnummer</label>
-          <input type="zip" class="form__input" id="zip" />
-          <label for="state" class="form__label">Postort</label>
-          <input type="state" class="form__input" id="state" />
-          <label for="password" class="form__label">Lösenord</label>
-          <input type="password" class="form__input" id="password" />
-          <label for="confirmPassword" class="form__label"
-            >Repetera lösenord</label
-          >
-          <input
-            type="confirmPassword"
-            class="form__input"
-            id="confirmPassword"
-          />
-          <input type="submit" class="form__submit" value="Registrera" />
-          <a href="../index.html">Redan kundmedlem? Logga in här</a>
+        <section class="form__container">
+          <div class="field field--mini-midi">
+            <label for="zip" class="label">Postnummer</label>
+            <input type="zip" class="input" id="zip" />
+            <label for="state" class="label">Postort</label>
+            <input type="state" class="input" id="state" />
+          </div>
+          <label for="password" class="label">Lösenord</label>
+          <input type="password" class="input" id="password" />
+          <label for="confirmPassword" class="label">Repetera lösenord</label>
+          <input type="confirmPassword" class="input" id="confirmPassword" />
+          <input type="submit" class="submit" value="Registrera" />
         </section>
+        <a href="../index.html">Redan kundmedlem? Logga in här</a>
       </form>
     </main>
   </body>

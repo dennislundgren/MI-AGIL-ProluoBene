@@ -1,0 +1,8 @@
+@use "../base/mixins";
+@use "../base/variables";
+.login-page,
+.register-page {
+  background-color: variables.$color-blue;
+  @include mixins.flex(column, center, center);
+  height: 100vh;
+}

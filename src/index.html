@@ -10,20 +10,22 @@
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <main>
+    <main class="login-page">
       <section class="container">
         <span class="logo"></span>
       </section>
-      <form action="./pages/page.html" class="form">
-        <section class="container">
-          <label for="email" class="form__label" id="email">E-post</label>
-          <input type="text" class="form__input" />
-          <label for="password" class="form__label">Lösenord</label>
-          <input type="password" class="form__input" id="password" />
-          <input type="submit" class="form__submit" value="Logga in" />
+      <section class="container">
+        <form action="./pages/page.html" class="form">
+          <section class="form__container">
+            <label for="email" class="label" id="email">E-post</label>
+            <input type="text" class="input" />
+            <label for="password" class="label">Lösenord</label>
+            <input type="password" class="input" id="password" />
+            <input type="submit" class="submit" value="Logga in" />
+          </section>
           <a href="./pages/register.html">Ej medlem? Registrera</a>
-        </section>
-      </form>
+        </form>
+      </section>
     </main>
   </body>
 </html>
