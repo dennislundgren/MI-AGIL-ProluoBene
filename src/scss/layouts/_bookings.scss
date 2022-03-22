@@ -1,10 +1,5 @@
+@use "../base/mixins";
 @use "../base/variables";
-
-@mixin desktop() {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
 
 .bookings {
   background-color: #e5e5e5;
@@ -18,13 +13,13 @@
   }
   .heading {
     .mb {
-      @include desktop() {
-        margin-bottom: -1%;
+      @include mixins.desktop() {
+        margin-bottom: 2%;
       }
     }
   }
   .booking-content {
-    @include desktop() {
+    @include mixins.desktop() {
       // display: flex;
       width: 40%;
       min-height: 300px;
@@ -38,7 +33,8 @@
     .infoCont {
       display: flex;
       flex-direction: column;
-      @include desktop() {
+      margin-top: 2%;
+      @include mixins.desktop() {
         //flex-basis: 100px;
         //height: 100px;
         flex: 1;
@@ -46,44 +42,49 @@
       }
 
       .cleaner {
-        margin-top: -5%;
-        @include desktop() {
+        @include mixins.desktop() {
           margin-top: 10%;
         }
       }
       .time {
-        line-height: 0%;
+        //line-height: 0%;
         margin-bottom: 8%;
-        @include desktop() {
-          margin-bottom: auto;
+        margin-top: 4%;
+        @include mixins.desktop() {
+          margin-bottom: 14%;
         }
         .initial {
-          @include desktop() {
+          @include mixins.desktop() {
             display: initial;
           }
         }
         .bi {
-          @include desktop() {
+          @include mixins.desktop() {
             display: block;
-            margin-bottom: 4%;
           }
         }
       }
       .location {
-        line-height: 0%;
+        //line-height: 0%;
         margin-bottom: 6%;
 
-        @include desktop() {
-          margin-bottom: 10%;
+        @include mixins.desktop() {
+          line-height: 0%;
+          margin-bottom: 8%;
+        }
+        .initial {
+          @include mixins.desktop() {
+            display: initial;
+          }
         }
         .bi {
-          @include desktop() {
+          @include mixins.desktop() {
             display: block;
             margin-bottom: 4%;
           }
         }
         .mt {
-          @include desktop() {
+          @include mixins.desktop() {
             margin-bottom: 10%;
           }
         }
@@ -93,7 +94,7 @@
     .btnContainer {
       display: flex;
       flex-direction: column;
-      @include desktop() {
+      @include mixins.desktop() {
         //flex-basis: 100px;
         //height: 100px;
         flex: 1;
@@ -105,7 +106,7 @@
         height: 50px;
         border-radius: 10px;
         margin: 2%;
-        @include desktop() {
+        @include mixins.desktop() {
           margin: 10%;
         }
       }

@@ -1,10 +1,5 @@
+@use "../base/mixins";
 @use "../base/variables";
-
-@mixin desktop() {
-  @media screen and (min-width: 768px) {
-    @content;
-  }
-}
 
 .edit-bookings {
   display: flex;
@@ -13,28 +8,32 @@
   background-color: #e5e5e5;
 
   .navigation-btn {
-    @include desktop() {
+    margin-top: 20%;
+    @include mixins.desktop() {
       display: flex;
       flex-direction: row;
       justify-content: center;
       flex-wrap: wrap;
+      margin-top: 4%;
     }
     .m1-left {
-      margin-left: -10%;
+      @include mixins.desktop() {
+        margin-left: -10%;
+      }
     }
 
     .m-left {
-      @include desktop() {
+      @include mixins.desktop() {
         margin-left: 10%;
       }
     }
 
     .back-container {
-      @include desktop() {
+      @include mixins.desktop() {
         flex-basis: 100%;
       }
       button {
-        @include desktop() {
+        @include mixins.desktop() {
           width: 300px;
         }
       }
