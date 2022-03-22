@@ -68,7 +68,7 @@
       font-size: 18px;
       cursor: pointer;
     }
-    @include mixins.desktop {
+    @include mixins.desktop(650px) {
       &--line:first-child {
         position: relative;
         &::before {

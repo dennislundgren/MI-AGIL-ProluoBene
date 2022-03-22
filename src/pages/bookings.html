@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../scss/main.scss" />
+  </head>
+  <body class="bookings">
+    <div class="heading">
+      <h2 class="mb">Bokade städningar av: Bob</h2>
+      <p>Id: 1</p>
+    </div>
+    <div class="booking-content">
+      <div class="infoCont">
+        <p class="cleaner">Städare: John Doe</p>
+        <div class="time">
+          <i class="bi bi-calendar-check"></i>
+          <!-- <p>1/1 - 2022, time 10:00</p> -->
+          <p class="initial">1/1 - 2022,</p>
+          <p class="initial">time: 10:00</p>
+        </div>
+        <div class="location">
+          <i class="bi bi-pin-map-fill"></i>
+          <!-- <p>Stockholm,Städgatan 4, 1186</p> -->
+          <p class="initial">Stockholm,</p>
+          <p class="initial">Städgatan 4,</p>
+          <p class="initial">1186</p>
+        </div>
+        <p class="mt">Status: Utfört, Obekräftad</p>
+      </div>
+
+      <div class="btnContainer">
+        <form action="./edit-bookings.html">
+          <button type="submit" class="btn">Hantera städning</button>
+        </form>
+        <form action="">
+          <button type="submit" class="btn">Boka en städning</button>
+        </form>
+        <form action="../index.html">
+          <button type="submit" class="btn">Logga ut</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
