@@ -15,7 +15,7 @@
         <span class="logo"></span>
       </section>
       <form action="../index.html" class="form">
-        <section class="form__container">
+        <section class="form__container form__container--line">
           <label for="email" class="label">E-post</label>
           <input type="text" class="input" id="email" />
           <label for="firstname" class="label">Förnamn</label>
@@ -28,18 +28,22 @@
         <section class="form__container">
           <input type="hidden" />
           <div class="field field--mini-midi">
-            <label for="zip" class="label">Postnummer</label>
-            <input type="zip" class="input" id="zip" />
-            <label for="state" class="label">Postort</label>
-            <input type="state" class="input" id="state" />
+            <div class="field__container">
+              <label for="zip" class="label">Postnummer</label>
+              <input type="zip" class="input" id="zip" />
+            </div>
+            <div class="field__container">
+              <label for="state" class="label">Postort</label>
+              <input type="state" class="input" id="state" />
+            </div>
           </div>
           <label for="password" class="label">Lösenord</label>
           <input type="password" class="input" id="password" />
           <label for="confirmPassword" class="label">Repetera lösenord</label>
           <input type="confirmPassword" class="input" id="confirmPassword" />
           <input type="submit" class="submit" value="Registrera" />
+          <a href="../index.html">Redan kundmedlem? Logga in här</a>
         </section>
-        <a href="../index.html">Redan kundmedlem? Logga in här</a>
       </form>
     </main>
   </body>
