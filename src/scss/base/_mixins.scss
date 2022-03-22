@@ -6,8 +6,8 @@
   gap: $gap;
 }
 
-@mixin desktop() {
-  @media screen and (min-width: 768px) {
+@mixin desktop($width: 768px) {
+  @media screen and (min-width: $width) {
     @content;
   }
 }
