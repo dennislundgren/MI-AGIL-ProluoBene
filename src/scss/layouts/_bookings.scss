@@ -9,6 +9,13 @@
 .bookings {
   background-color: #e5e5e5;
   text-align: center;
+  header {
+    text-align: center;
+    p {
+      display: inline;
+      margin: 1%;
+    }
+  }
   .heading {
     .mb {
       @include desktop() {
@@ -50,13 +57,24 @@
         @include desktop() {
           margin-bottom: auto;
         }
+        .initial {
+          @include desktop() {
+            display: initial;
+          }
+        }
+        .bi {
+          @include desktop() {
+            display: block;
+            margin-bottom: 4%;
+          }
+        }
       }
       .location {
         line-height: 0%;
         margin-bottom: 6%;
 
         @include desktop() {
-          margin-bottom: 18%;
+          margin-bottom: 10%;
         }
         .bi {
           @include desktop() {
@@ -67,11 +85,6 @@
         .mt {
           @include desktop() {
             margin-bottom: 10%;
-          }
-        }
-        .initial {
-          @include desktop() {
-            display: initial;
           }
         }
       }
