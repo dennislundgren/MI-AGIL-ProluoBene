@@ -1,0 +1,66 @@
+//////////////
+// IMPORTS //
+////////////
+@use "../base/mixins";
+@use "../base/variables";
+///////////////////
+// FORM STYLING //
+/////////////////
+.form {
+  @include mixins.flex(row, center, center);
+  width: 100%;
+  flex-wrap: wrap;
+  &__container {
+    @include mixins.flex(column, center, center);
+    width: clamp(220px, 70vw, 300px);
+    & > *:not(.submit) {
+      width: 100%;
+    }
+    & :nth-child(odd) {
+      margin-top: 1rem;
+    }
+    & :nth-child(even) {
+      margin-top: 0.25rem;
+    }
+    .label {
+      color: variables.$color-dark;
+      font-size: 14px;
+      align-self: flex-start;
+      font-weight: 200;
+      font-style: normal;
+    }
+    .input {
+      background-color: white;
+      border: variables.$border;
+      border-radius: variables.$border-radius-sm;
+      padding: 0.5rem;
+      font-size: 18px;
+      color: variables.$color-dark;
+    }
+    .field {
+      width: 100%;
+      @include mixins.flex(row, center, center);
+      &--mini-midi {
+        & > :nth-child(odd) {
+          width: 20%;
+          color: salmon;
+        }
+        & > :nth-child(even) {
+          width: 80%;
+          color: salmon;
+        }
+      }
+    }
+    .submit {
+      width: 60%;
+      padding: 0.2rem;
+      border: variables.$border;
+      border-radius: variables.$border-radius-lg;
+      background-color: variables.$color-dark;
+      color: variables.$color-beige;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      font-size: 18px;
+    }
+  }
+}

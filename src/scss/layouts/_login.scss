@@ -1,0 +1,13 @@
+@use "../base/mixins";
+@use "../base/variables";
+.login-page,
+.register-page {
+  background-color: variables.$color-blue;
+  background-image: linear-gradient(
+    -160deg,
+    variables.$color-blue 10%,
+    variables.$color-light-blue 130%
+  );
+  @include mixins.flex(column, center, center);
+  height: 100vh;
+}
