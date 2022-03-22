@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "source": "src/index.html",
+  "source": [
+    "src/index.html",
+    "src/pages/register.html",
+    "src/pages/page.html"
+  ],
   "scripts": {
     "start": "parcel --no-cache",
     "build": "parcel src/index.html src/pages/bookings.html src/pages/edit-bookings.html --no-cache"
@@ -13,5 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "parcel": "^2.3.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.3.2"
   }
 }

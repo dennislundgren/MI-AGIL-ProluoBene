@@ -10,6 +10,23 @@
     <script type="module" src="js/main.js"></script>
   </head>
   <body>
-    <a href="./pages/bookings.html">Till bokningar</a>
+    <main class="login-page">
+      <section class="container">
+        <span class="logo"></span>
+      </section>
+      <section class="container">
+        <form action="./pages/page.html" class="form">
+          <section class="form__container">
+            <label for="email" class="label" id="email">E-post</label>
+            <input type="text" class="input" />
+            <label for="password" class="label">Lösenord</label>
+            <input type="password" class="input" id="password" />
+            <input type="submit" class="submit" value="Logga in" />
+          </section>
+          <a href="./pages/register.html">Ej medlem? Registrera</a>
+          <a href="./pages/page.html">Page</a>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
