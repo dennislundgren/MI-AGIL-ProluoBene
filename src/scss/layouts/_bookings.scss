@@ -1,37 +1,101 @@
 @use "../base/variables";
 
+@mixin desktop() {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
 .bookings {
   background-color: #e5e5e5;
   text-align: center;
-  .bi {
-    font-size: 32px;
-  }
-  .infoCont {
-    display: flex;
-    flex-direction: column;
-    .cleaner {
-      margin-top: -5%;
-    }
-    .time {
-      line-height: 0%;
-      margin-bottom: 8%;
-    }
-    .location {
-      line-height: 0%;
-      margin-bottom: 6%;
+  .heading {
+    .mb {
+      @include desktop() {
+        margin-bottom: -1%;
+      }
     }
   }
+  .booking-content {
+    @include desktop() {
+      // display: flex;
+      width: 40%;
+      min-height: 300px;
+      margin: 0 auto;
+      display: flex;
+    }
 
-  .btnContainer {
-    display: flex;
-    flex-direction: column;
-    .btn {
-      background-color: white;
-      border: 1px solid black;
-      width: 220px;
-      height: 50px;
-      border-radius: 10px;
-      margin: 2%;
+    .bi {
+      font-size: 32px;
+    }
+    .infoCont {
+      display: flex;
+      flex-direction: column;
+      @include desktop() {
+        //flex-basis: 100px;
+        //height: 100px;
+        flex: 1;
+        border-right: 2px solid black;
+      }
+
+      .cleaner {
+        margin-top: -5%;
+        @include desktop() {
+          margin-top: 10%;
+        }
+      }
+      .time {
+        line-height: 0%;
+        margin-bottom: 8%;
+        @include desktop() {
+          margin-bottom: auto;
+        }
+      }
+      .location {
+        line-height: 0%;
+        margin-bottom: 6%;
+
+        @include desktop() {
+          margin-bottom: 18%;
+        }
+        .bi {
+          @include desktop() {
+            display: block;
+            margin-bottom: 4%;
+          }
+        }
+        .mt {
+          @include desktop() {
+            margin-bottom: 10%;
+          }
+        }
+        .initial {
+          @include desktop() {
+            display: initial;
+          }
+        }
+      }
+    }
+
+    .btnContainer {
+      display: flex;
+      flex-direction: column;
+      @include desktop() {
+        //flex-basis: 100px;
+        //height: 100px;
+        flex: 1;
+      }
+      .btn {
+        background-color: white;
+        border: 1px solid black;
+        width: 220px;
+        height: 50px;
+        border-radius: 10px;
+        margin: 2%;
+        @include desktop() {
+          margin: 10%;
+        }
+      }
     }
   }
 }

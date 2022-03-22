@@ -13,37 +13,39 @@
   </head>
   <body class="bookings">
     <div class="heading">
-      <h2>Bokade städningar av: Bob</h2>
-    </div>
-    <div class="infoCont">
+      <h2 class="mb">Bokade städningar av: Bob</h2>
       <p>Id: 1</p>
-      <p class="cleaner">Städare: John Doe</p>
-      <div class="time">
-        <i class="bi bi-calendar-check"></i>
-        <!-- <p>1/1 - 2022, time 10:00</p> -->
-        <p>1/1 - 2022,</p>
-        <p>time: 10:00</p>
-      </div>
-      <div class="location">
-        <i class="bi bi-pin-map-fill"></i>
-        <!-- <p>Stockholm,Städgatan 4, 1186</p> -->
-        <p>Stockholm,</p>
-        <p>Städgatan 4,</p>
-        <p>1186</p>
-      </div>
-      <p>Status: Utfört, Obekräftad</p>
     </div>
+    <div class="booking-content">
+      <div class="infoCont">
+        <p class="cleaner">Städare: John Doe</p>
+        <div class="time">
+          <i class="bi bi-calendar-check"></i>
+          <!-- <p>1/1 - 2022, time 10:00</p> -->
+          <p>1/1 - 2022,</p>
+          <p>time: 10:00</p>
+        </div>
+        <div class="location">
+          <i class="bi bi-pin-map-fill"></i>
+          <!-- <p>Stockholm,Städgatan 4, 1186</p> -->
+          <p class="initial">Stockholm,</p>
+          <p class="initial">Städgatan 4,</p>
+          <p class="initial">1186</p>
+        </div>
+        <p class="mt">Status: Utfört, Obekräftad</p>
+      </div>
 
-    <div class="btnContainer">
-      <form action="./edit-bookings.html">
-        <button type="submit" class="btn">Hantera städning</button>
-      </form>
-      <form action="">
-        <button type="submit" class="btn">Boka en städning</button>
-      </form>
-      <form action="../index.html">
-        <button type="submit" class="btn">Logga ut</button>
-      </form>
+      <div class="btnContainer">
+        <form action="./edit-bookings.html">
+          <button type="submit" class="btn">Hantera städning</button>
+        </form>
+        <form action="">
+          <button type="submit" class="btn">Boka en städning</button>
+        </form>
+        <form action="../index.html">
+          <button type="submit" class="btn">Logga ut</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

@@ -18,16 +18,22 @@
       <p>Status: Utfört, Obekräftad</p>
     </div>
     <div class="navigation-btn">
-      <form action="./page.html" onsubmit="alert('Städning godkänd')">
-        <button type="submit" class="btn">Godkänn städning</button>
+      <form
+        action="./page.html"
+        class="mg-right"
+        onsubmit="alert('Städning godkänd')"
+      >
+        <button type="submit" class="btn mg-right">Godkänn städning</button>
       </form>
 
       <form action="./page.html" onsubmit="alert('Städning underkänd')">
         <button type="submit" class="btn">Underkänn städning</button>
       </form>
-      <form action="./bookings.html">
-        <button type="submit" class="btn">Tillbaka</button>
-      </form>
+      <div class="back-container">
+        <form action="./bookings.html">
+          <button type="submit" class="btn">Tillbaka</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
