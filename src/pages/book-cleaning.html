@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proluo Bene</title>
+    <link rel="stylesheet" href="../scss/layouts/_book-cleaning.scss" />
+  </head>
+  <body>
+    <main class="book-cleaning">
+      <h1>Boka din städning</h1>
+      <!-- BOKA STÄDNING FORM -->
+      <form action="../index.html" class="form">
+        <section class="form-container">
+          <label for="E-post" class="label">E-post</label>
+          <input type="text" class="input" id="email" />
+          <label for="firstname" class="label">Förnamn</label>
+          <input type="text" class="input" id="firstname" />
+          <label for="lastname" class="label">Efternamn</label>
+          <input type="text" class="input" id="lastname" />
+          <label for="adress" class="label">Adress</label>
+          <input type="text" class="input" id="adress" />
+          <div class="mini-inputs">
+            <label for="postnummer" class="label">Postnummer</label>
+            <input type="text" class="mini-input" id="zip" />
+            <label for="postort" class="label">Postort</label>
+            <input type="text" class="mini-input" id="state" />
+          </div>
+          <div class="mini-inputs">
+            <label for="datum/tid" class="label"
+              >Kolla tillgänlighet för bokning</label
+            >
+            <input type="date" name="datum" id="datum" />
+            <input type="time" name="tid" id="tid" />
+          </div>
+        </section>
+        <!-- Section 2 -->
+        <section class="form-container">
+          <h1>Betalning</h1>
+          <label for="kortnamn" class="label">Kortinnehavarens namn</label>
+          <input type="text" class="input" id="kortnamn" />
+          <label for="kortnummer" class="label">Kortnummer</label>
+          <input type="text" class="input" id="kortnummer" />
+          <div class="mini-inputs">
+            <label for="text" class="label">Utgångsdatum</label>
+            <input type="text" class="mini-input" id="utgangsdatum" />
+            <label for="text" class="label">CVV</label>
+            <input type="text" class="mini-input" id="cvv" />
+          </div>
+          <input type="checkbox" name="kom-ihåg" id="kom-ihag" />
+          <label for="text" class="label">Kom ihåg mig </label>
+          <input type="submit" value="Slutför betalning" class="submit-btnq" />
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
