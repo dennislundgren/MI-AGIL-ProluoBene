@@ -9,48 +9,87 @@
   </head>
   <body>
     <main class="book-cleaning">
-      <h1>Boka din städning</h1>
       <!-- BOKA STÄDNING FORM -->
       <form action="../index.html" class="form">
+        <!-- SECTION 1 -->
         <section class="form-container">
-          <label for="E-post" class="label">E-post</label>
-          <input type="text" class="input" id="email" />
-          <label for="firstname" class="label">Förnamn</label>
-          <input type="text" class="input" id="firstname" />
-          <label for="lastname" class="label">Efternamn</label>
-          <input type="text" class="input" id="lastname" />
-          <label for="adress" class="label">Adress</label>
-          <input type="text" class="input" id="adress" />
-          <div class="mini-inputs">
-            <label for="postnummer" class="label">Postnummer</label>
-            <input type="text" class="mini-input" id="zip" />
-            <label for="postort" class="label">Postort</label>
-            <input type="text" class="mini-input" id="state" />
+          <h1 class="boka">Boka din städning</h1>
+          <div class="input-label">
+            <label for="E-post" class="label">E-post</label>
+            <input type="text" class="clean-input" id="email" required />
+          </div>
+          <div class="input-label">
+            <label for="firstname" class="label">Förnamn</label>
+            <input type="text" class="clean-input" id="firstname" required />
+          </div>
+          <div class="input-label">
+            <label for="lastname" class="label">Efternamn</label>
+            <input type="text" class="clean-input" id="lastname" required />
+          </div>
+          <div class="input-label">
+            <label for="adress" class="label">Adress</label>
+            <input type="text" class="clean-input" id="adress" required />
           </div>
           <div class="mini-inputs">
-            <label for="datum/tid" class="label"
-              >Kolla tillgänlighet för bokning</label
-            >
-            <input type="date" name="datum" id="datum" />
-            <input type="time" name="tid" id="tid" />
+            <div class="input-container-two">
+              <div class="label-input">
+                <label for="text">Postnummer</label>
+                <input
+                  type="text"
+                  class="mini-input"
+                  id="utgangsdatum"
+                  required
+                />
+              </div>
+              <div class="label-input">
+                <label for="text">Postort</label>
+                <input type="text" class="mini-input" id="cvv" required />
+              </div>
+            </div>
+          </div>
+          <div class="mini-inputs">
+            <div class="input-container">
+              <label for="datum/tid">Kolla tillgänlighet för bokning</label>
+              <input type="date" name="datum" id="datum" required />
+              <input type="time" name="tid" id="tid" required />
+            </div>
           </div>
         </section>
+        <hr />
         <!-- Section 2 -->
         <section class="form-container">
-          <h1>Betalning</h1>
-          <label for="kortnamn" class="label">Kortinnehavarens namn</label>
-          <input type="text" class="input" id="kortnamn" />
-          <label for="kortnummer" class="label">Kortnummer</label>
-          <input type="text" class="input" id="kortnummer" />
-          <div class="mini-inputs">
-            <label for="text" class="label">Utgångsdatum</label>
-            <input type="text" class="mini-input" id="utgangsdatum" />
-            <label for="text" class="label">CVV</label>
-            <input type="text" class="mini-input" id="cvv" />
+          <h1 class="boka">Betalning</h1>
+          <div class="input-label">
+            <label for="kortnamn" class="label">Kortinnehavarens namn</label>
+            <input type="text" class="clean-input" id="kortnamn" required />
           </div>
-          <input type="checkbox" name="kom-ihåg" id="kom-ihag" />
-          <label for="text" class="label">Kom ihåg mig </label>
-          <input type="submit" value="Slutför betalning" class="submit-btnq" />
+          <div class="input-label">
+            <label for="kortnummer" class="label">Kortnummer</label>
+            <input type="text" class="clean-input" id="kortnummer" required />
+          </div>
+          <div class="mini-inputs">
+            <div class="input-container-two">
+              <div class="label-input">
+                <label for="text">Utgångsdatum</label>
+                <input
+                  type="text"
+                  class="mini-input"
+                  id="utgangsdatum"
+                  required
+                />
+              </div>
+              <div class="label-input">
+                <label for="text">CVV</label>
+                <input type="text" class="mini-input" id="cvv" required />
+              </div>
+            </div>
+          </div>
+          <div class="remember-me-checkbox">
+            <input type="checkbox" name="kom-ihåg" id="kom-ihag" />
+            <label for="text" class="kom-ihag">Kom ihåg mig </label>
+          </div>
+          <div class="submit-container"></div>
+          <input type="submit" value="Slutför betalning" class="submit-btn" />
         </section>
       </form>
     </main>
