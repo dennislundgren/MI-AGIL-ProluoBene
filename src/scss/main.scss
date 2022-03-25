@@ -2,5 +2,8 @@
 @use "./base/typography";
 @use "./components/form";
 @use "./layouts/login";
+@use "./layouts/book-cleaning";
+@use "./layouts/cancel";
 @use "../scss/layouts/bookings";
 @use "../scss/layouts/edit-bookings";
+

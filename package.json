@@ -6,7 +6,8 @@
   "source": [
     "src/index.html",
     "src/pages/register.html",
-    "src/pages/page.html"
+    "src/pages/page.html",
+    "src/pages/book-cleaning.html"
   ],
   "scripts": {
     "start": "parcel --no-cache",
