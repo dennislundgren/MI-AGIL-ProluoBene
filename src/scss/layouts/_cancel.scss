@@ -80,6 +80,7 @@ body {
   .input-container {
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
   .input-container-two {
     display: flex;
@@ -90,7 +91,6 @@ body {
   .remember-me-checkbox {
     display: flex;
     align-items: center;
-    margin-left: 10%;
     gap: 5px;
     .kom-ihag {
       text-decoration: underline;
@@ -98,6 +98,10 @@ body {
   }
   .label {
     font-size: 14px;
+  }
+  .time {
+    display: flex;
+    gap: 10px;
   }
 }
 

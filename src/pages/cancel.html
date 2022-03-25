@@ -5,17 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proluo Bene</title>
-    <link rel="stylesheet" href="../scss/layouts/_book-cleaning.scss" />
+    <link rel="stylesheet" href="../scss/layouts/_cancel.scss" />
   </head>
   <body>
     <main class="book-cleaning">
-      <h1 class="boka">Boka din städning</h1>
+      <h1 class="boka">Avboka</h1>
+      <p class="boka">Fyll i dina personuppgifter</p>
       <!-- BOKA STÄDNING FORM -->
       <form action="../index.html" class="form">
         <!-- SECTION 1 -->
         <section class="form-container">
-          <h1 class="boka">Personuppgifter</h1>
-
           <div class="input-label">
             <label for="E-post" class="label">E-post</label>
             <input type="text" class="clean-input" id="email" required />
@@ -28,6 +27,9 @@
             <label for="lastname" class="label">Efternamn</label>
             <input type="text" class="clean-input" id="lastname" required />
           </div>
+        </section>
+        <!-- SECTION2 -->
+        <section class="form-container">
           <div class="input-label">
             <label for="adress" class="label">Adress</label>
             <input type="text" class="clean-input" id="adress" required />
@@ -51,49 +53,26 @@
           </div>
           <div class="mini-inputs">
             <div class="input-container">
-              <label for="datum/tid">Kolla tillgänlighet för bokning</label>
+              <label for="datum/tid"
+                >Välj utvalda tid och datum för bokning</label
+              >
               <div class="time">
                 <input type="date" name="datum" id="datum" required />
                 <input type="time" name="tid" id="tid" required />
               </div>
+              <div class="remember-me-checkbox">
+                <input type="checkbox" name="kom-ihåg" id="kom-ihag" />
+                <label for="text" class="kom-ihag"
+                  >Här med godkänner jag avbokningsvilkoren
+                </label>
+              </div>
+              <input
+                type="submit"
+                value="Slutför avbokning"
+                class="submit-btn"
+              />
             </div>
           </div>
-        </section>
-        <hr />
-        <!-- Section 2 -->
-        <section class="form-container">
-          <h1 class="boka">Betalning</h1>
-          <div class="input-label">
-            <label for="kortnamn" class="label">Kortinnehavarens namn</label>
-            <input type="text" class="clean-input" id="kortnamn" required />
-          </div>
-          <div class="input-label">
-            <label for="kortnummer" class="label">Kortnummer</label>
-            <input type="text" class="clean-input" id="kortnummer" required />
-          </div>
-          <div class="mini-inputs">
-            <div class="input-container-two">
-              <div class="label-input">
-                <label for="text">Utgångsdatum</label>
-                <input
-                  type="text"
-                  class="mini-input"
-                  id="utgangsdatum"
-                  required
-                />
-              </div>
-              <div class="label-input">
-                <label for="text">CVV</label>
-                <input type="text" class="mini-input" id="cvv" required />
-              </div>
-            </div>
-          </div>
-          <div class="remember-me-checkbox">
-            <input type="checkbox" name="kom-ihåg" id="kom-ihag" />
-            <label for="text" class="kom-ihag">Kom ihåg mig </label>
-          </div>
-          <div class="submit-container"></div>
-          <input type="submit" value="Slutför betalning" class="submit-btn" />
         </section>
       </form>
     </main>
