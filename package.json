@@ -7,7 +7,9 @@
     "src/index.html",
     "src/pages/register.html",
     "src/pages/page.html",
-    "src/pages/book-cleaning.html"
+    "src/pages/book-cleaning.html",
+    "src/pages/bookings.html",
+    "src/pages/edit-bookings.html"
   ],
   "scripts": {
     "start": "parcel --no-cache"
