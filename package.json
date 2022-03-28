@@ -10,8 +10,7 @@
     "src/pages/book-cleaning.html"
   ],
   "scripts": {
-    "start": "parcel --no-cache",
-    "build": "parcel src/index.html src/pages/bookings.html src/pages/edit-bookings.html --no-cache"
+    "start": "parcel --no-cache"
   },
   "keywords": [],
   "author": "Malcolm Lindberg, Dennis Lundgren, Rasmus Palm",
