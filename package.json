@@ -9,7 +9,8 @@
     "src/pages/page.html",
     "src/pages/book-cleaning.html",
     "src/pages/bookings.html",
-    "src/pages/edit-bookings.html"
+    "src/pages/edit-bookings.html",
+    "src/pages/done-cleanings/approved-cleaning.html"
   ],
   "scripts": {
     "start": "parcel --no-cache"
